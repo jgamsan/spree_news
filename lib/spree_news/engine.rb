@@ -1,5 +1,6 @@
 module SpreeNews
   class Engine < Rails::Engine
+    require 'spree/core'
     engine_name 'spree_news'
 
     config.autoload_paths += %W(#{config.root}/lib)

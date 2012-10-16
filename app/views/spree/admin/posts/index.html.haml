@@ -1,6 +1,5 @@
-= render :partial => 'spree/admin/shared/configuration_menu'
-%h1 Posts
-.new-post= button_link_to 'New Post', new_object_url, :icon => 'add', :id => 'admin_new_post_link'
+%h1= t("listing_posts")
+
 
 %table.index#listing_posts
   %thead
@@ -13,6 +12,8 @@
       %tr
         %td= link_to post.title, object_url(post)
         %td= post.description.html_safe
-        %td= link_to_edit post
-        %td= link_to_delete post
+        %td= link_to_edit post &nbsp;
+        %td= link_to_delete post &nbsp;
 
+%p{:data => {:hook => 'links'}}
+  = link_to icon('add') + ' ' + t(:new_post), new_object_url, :id => 'new_post_link'
