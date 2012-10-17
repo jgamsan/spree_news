@@ -11,8 +11,11 @@
   padding: 10px 10px 10px 10px;
 }
 
-#news-container ul li div {
+#news-container div {
   min-height: 75px;
-  background: white;
   padding: 5px 5px 5px 5px;
+}
+
+#news-container dt dd {
+  color: black;
 }
