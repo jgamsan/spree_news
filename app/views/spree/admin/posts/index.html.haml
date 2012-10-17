@@ -13,8 +13,10 @@
         %td= link_to post.title, object_url(post)
         %td= post.description.html_safe
         %td
-          = link_to_edit post &nbsp;
-          = link_to_delete post &nbsp;
+          = link_to_edit post
+          &nbsp;
+          = link_to_delete post
+          &nbsp;
 
 %p{:data => {:hook => 'links'}}
   = link_to icon('add') + ' ' + t(:new_post), new_object_url, :id => 'new_post_link'
