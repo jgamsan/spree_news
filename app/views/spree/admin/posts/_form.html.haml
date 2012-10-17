@@ -8,7 +8,7 @@
       = f.label :description, t(:description)
       = f.text_area :description
       = error_message_on :post, :description
-    f.field_container :published do
+    = f.field_container :published do
       = f.label :published, t(:published)
       = f.check_box :published
       = error_message_on :post, :published
