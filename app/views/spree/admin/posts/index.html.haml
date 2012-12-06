@@ -3,13 +3,13 @@
 
 - content_for :page_actions do
   %li
-    = button_link_to t(:new_tire_width), new_admin_tire_width_url, :icon => 'icon-plus', :id => 'admin_new_tire_width_link'
+    = button_link_to t(:new_post), new_admin_tire_width_url, :icon => 'icon-plus', :id => 'admin_new_tire_width_link'
 
 
 %table.index.responsive#listing_posts
   %colgroup
     %col{:style => "width: 20%;"}
-    %col{:style => "width: 20%;"}
+    %col{:style => "width: 60%;"}
   %thead
     %th
       = t(:name)
