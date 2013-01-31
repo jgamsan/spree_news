@@ -1,4 +1,4 @@
-= render :partial => 'spree/shared/error_messages', :target => @post
+= render :partial => 'spree/shared/error_messages', :locals => {:target => @post}
 %h1= t("editing_post")
 
 = form_for [:admin, @post] do |f|
